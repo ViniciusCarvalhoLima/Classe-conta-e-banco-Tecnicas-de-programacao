@@ -76,18 +76,3 @@ class Banco:
             conta_destino.creditar(valor)
 
         print(f"Transferência de {valor:.2f} realizada de {origem} para {destino}.")
-
-from sisbanco import Conta as C, Banco as B
-
-def terminal():
-    sisbanco = B()
-    while True:
-        print("SisBanco :: Bem-Vindo!")
-        print(".:: Opções ::.")
-        print("[0] - Criar Conta")
-        print("[1] - Creditar")
-        print("[2] - Debitar")
-        print("[3] - Transferir")
-        print("[4] - Saldo")
-        print("[5] - Sair")
-        opcao = input("Digite: ")
